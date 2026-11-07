@@ -47,7 +47,7 @@ You do **not** need Grok Bot (or any agent) to install or run Lanepack.
 Fresh clone:
 
 ```bash
-git clone <this-repo-url> && cd lanepack && npm run setup
+git clone https://github.com/YonatanAriel/lanepack.git && cd lanepack && npm run setup
 ```
 
 Already have the repo checked out — from the repo root:
