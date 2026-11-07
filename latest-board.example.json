@@ -1,0 +1,26 @@
+{
+  "tasks": [
+    {
+      "id": "pack-example-1",
+      "title": "Ship login fix (PROJ-101)",
+      "source": "jira",
+      "status": "in_progress",
+      "lane": "in_progress",
+      "priority": 0,
+      "jiraUrl": "https://example.atlassian.net/browse/PROJ-101",
+      "evidence": "Assignee confirmed repro on staging",
+      "updatedAt": "2026-01-15T10:00:00.000Z"
+    },
+    {
+      "id": "pack-example-2",
+      "title": "Follow up on customer email",
+      "source": "gmail",
+      "status": "open",
+      "lane": "up_next",
+      "priority": 0,
+      "evidence": "Waiting on logs from support",
+      "updatedAt": "2026-01-14T16:30:00.000Z"
+    }
+  ],
+  "hideDone": true
+}

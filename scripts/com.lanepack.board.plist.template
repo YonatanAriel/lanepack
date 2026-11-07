@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!--
+  Optional LaunchAgent — NOT installed automatically.
+  1. Replace __REPO_ROOT__ with your clone path (e.g. ~/repos/lanepack).
+  2. cp scripts/com.lanepack.board.plist.template ~/Library/LaunchAgents/com.lanepack.board.plist
+  3. launchctl load ~/Library/LaunchAgents/com.lanepack.board.plist
+  Starts preview on login (no browser). Stop with: launchctl unload ... && scripts/stop.sh
+-->
+<plist version="1.0">
+<dict>
+  <key>Label</key>
+  <string>com.lanepack.board</string>
+  <key>ProgramArguments</key>
+  <array>
+    <string>/bin/bash</string>
+    <string>__REPO_ROOT__/scripts/start.sh</string>
+  </array>
+  <key>EnvironmentVariables</key>
+  <dict>
+    <key>SKIP_BROWSER</key>
+    <string>1</string>
+  </dict>
+  <key>WorkingDirectory</key>
+  <string>__REPO_ROOT__</string>
+  <key>RunAtLoad</key>
+  <true/>
+  <key>StandardOutPath</key>
+  <string>__REPO_ROOT__/.board-preview.log</string>
+  <key>StandardErrorPath</key>
+  <string>__REPO_ROOT__/.board-preview.log</string>
+</dict>
+</plist>
